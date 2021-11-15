@@ -1,0 +1,603 @@
+{
+  "Parameters": {
+    "env": {
+      "Type": "String",
+      "Description": "Current Amplify CLI env name"
+    },
+    "AssetParametersa693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5S3Bucket2D66C257": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"a693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5\""
+    },
+    "AssetParametersa693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5S3VersionKeyD9EF7FB8": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"a693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5\""
+    },
+    "AssetParametersa693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5ArtifactHashFB5DD839": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"a693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5\""
+    },
+    "AssetParameters69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64S3Bucket6BBF7235": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64\""
+    },
+    "AssetParameters69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64S3VersionKey10876CD9": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64\""
+    },
+    "AssetParameters69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64ArtifactHash321A7118": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64\""
+    }
+  },
+  "Resources": {
+    "authorizerappdevAppSyncAuthorizerHandlerServiceRole1AFC13DD": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/authorizerapp-dev-AppSyncAuthorizerHandler/ServiceRole/Resource"
+      }
+    },
+    "authorizerappdevAppSyncAuthorizerHandlerServiceRoleDefaultPolicyBD106319": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "lambda:InvokeFunction",
+              "Effect": "Allow",
+              "Resource": "arn:aws:iam::*:role/aws-service-role/appsync.amazonaws.com/AWSServiceRoleForAppSync"
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "authorizerappdevAppSyncAuthorizerHandlerServiceRoleDefaultPolicyBD106319",
+        "Roles": [
+          {
+            "Ref": "authorizerappdevAppSyncAuthorizerHandlerServiceRole1AFC13DD"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/authorizerapp-dev-AppSyncAuthorizerHandler/ServiceRole/DefaultPolicy/Resource"
+      }
+    },
+    "authorizerappdevAppSyncAuthorizerHandler4AA82814": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParametersa693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5S3Bucket2D66C257"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersa693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5S3VersionKeyD9EF7FB8"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersa693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5S3VersionKeyD9EF7FB8"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "authorizerappdevAppSyncAuthorizerHandlerServiceRole1AFC13DD",
+            "Arn"
+          ]
+        },
+        "Handler": "lambda-authorizer.handler",
+        "MemorySize": 1024,
+        "Runtime": "nodejs14.x"
+      },
+      "DependsOn": [
+        "authorizerappdevAppSyncAuthorizerHandlerServiceRoleDefaultPolicyBD106319",
+        "authorizerappdevAppSyncAuthorizerHandlerServiceRole1AFC13DD"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/authorizerapp-dev-AppSyncAuthorizerHandler/Resource",
+        "aws:asset:path": "asset.a693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5",
+        "aws:asset:property": "Code"
+      }
+    },
+    "ApiApiLogsRole90293F72": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "appsync.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSAppSyncPushToCloudWatchLogs"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/Api/ApiLogsRole/Resource"
+      }
+    },
+    "ApiF70053CD": {
+      "Type": "AWS::AppSync::GraphQLApi",
+      "Properties": {
+        "AuthenticationType": "AWS_LAMBDA",
+        "Name": "authorizerapp-dev-cdk-appsync-api",
+        "LambdaAuthorizerConfig": {
+          "AuthorizerUri": {
+            "Fn::GetAtt": [
+              "authorizerappdevAppSyncAuthorizerHandler4AA82814",
+              "Arn"
+            ]
+          }
+        },
+        "LogConfig": {
+          "CloudWatchLogsRoleArn": {
+            "Fn::GetAtt": [
+              "ApiApiLogsRole90293F72",
+              "Arn"
+            ]
+          },
+          "FieldLogLevel": "ALL"
+        },
+        "XrayEnabled": false
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/Api/Resource"
+      }
+    },
+    "ApiSchema510EECD7": {
+      "Type": "AWS::AppSync::GraphQLSchema",
+      "Properties": {
+        "ApiId": {
+          "Fn::GetAtt": [
+            "ApiF70053CD",
+            "ApiId"
+          ]
+        },
+        "Definition": "# graphql/schema.graphql\r\ntype Payment {\r\n  id: ID!\r\n  amount: Float!\r\n  currency: String!\r\n  dueDate: AWSDateTime!\r\n  from_account: String!\r\n  to_account: String!\r\n  message: String\r\n  type: PaymentType!\r\n  tenantId: ID!\r\n}\r\n\r\nenum PaymentType {\r\n  DOMESTIC\r\n  INTERNATIONAL\r\n}\r\n\r\ninput CreatePaymentInput {\r\n  id: ID\r\n  amount: Float!\r\n  currency: String!\r\n  dueDate: AWSDateTime!\r\n  from_account: String!\r\n  to_account: String!\r\n  message: String\r\n  type: PaymentType!\r\n  tenantId: ID!\r\n}\r\n\r\ninput UpdatePaymentInput {\r\n  id: ID!\r\n  amount: Float\r\n  currency: String\r\n  dueDate: AWSDateTime\r\n  from_account: String\r\n  to_account: String\r\n  message: String\r\n  type: PaymentType\r\n  tenantId: ID\r\n}\r\n\r\ninput DeletePaymentInput {\r\n  id: ID\r\n}\r\n\r\ntype Query {\r\n  getPaymentById(paymentId: ID!): Payment\r\n  listPayments: [Payment]\r\n}\r\n\r\ntype Mutation {\r\n  createPayment(input: CreatePaymentInput!): Payment\r\n  updatePayment(input: UpdatePaymentInput!): Payment\r\n  deletePayment(input: DeletePaymentInput!): String\r\n}"
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/Api/Schema"
+      }
+    },
+    "ApilambdaDatasourceServiceRole2CA75790": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "appsync.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/Api/lambdaDatasource/ServiceRole/Resource"
+      }
+    },
+    "ApilambdaDatasourceServiceRoleDefaultPolicy3A97E34D": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "lambda:InvokeFunction",
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "authorizerappdevAppSyncPaymentsHandler7762B343",
+                  "Arn"
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "ApilambdaDatasourceServiceRoleDefaultPolicy3A97E34D",
+        "Roles": [
+          {
+            "Ref": "ApilambdaDatasourceServiceRole2CA75790"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/Api/lambdaDatasource/ServiceRole/DefaultPolicy/Resource"
+      }
+    },
+    "ApilambdaDatasource2C776EE2": {
+      "Type": "AWS::AppSync::DataSource",
+      "Properties": {
+        "ApiId": {
+          "Fn::GetAtt": [
+            "ApiF70053CD",
+            "ApiId"
+          ]
+        },
+        "Name": "lambdaDatasource",
+        "Type": "AWS_LAMBDA",
+        "LambdaConfig": {
+          "LambdaFunctionArn": {
+            "Fn::GetAtt": [
+              "authorizerappdevAppSyncPaymentsHandler7762B343",
+              "Arn"
+            ]
+          }
+        },
+        "ServiceRoleArn": {
+          "Fn::GetAtt": [
+            "ApilambdaDatasourceServiceRole2CA75790",
+            "Arn"
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/Api/lambdaDatasource/Resource"
+      }
+    },
+    "ApilambdaDatasourceQuerygetPaymentByIdResolver8F92ADB5": {
+      "Type": "AWS::AppSync::Resolver",
+      "Properties": {
+        "ApiId": {
+          "Fn::GetAtt": [
+            "ApiF70053CD",
+            "ApiId"
+          ]
+        },
+        "FieldName": "getPaymentById",
+        "TypeName": "Query",
+        "DataSourceName": "lambdaDatasource",
+        "Kind": "UNIT"
+      },
+      "DependsOn": [
+        "ApilambdaDatasource2C776EE2",
+        "ApiSchema510EECD7"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/Api/lambdaDatasource/QuerygetPaymentByIdResolver/Resource"
+      }
+    },
+    "ApilambdaDatasourceQuerylistPaymentsResolverF10D75D8": {
+      "Type": "AWS::AppSync::Resolver",
+      "Properties": {
+        "ApiId": {
+          "Fn::GetAtt": [
+            "ApiF70053CD",
+            "ApiId"
+          ]
+        },
+        "FieldName": "listPayments",
+        "TypeName": "Query",
+        "DataSourceName": "lambdaDatasource",
+        "Kind": "UNIT"
+      },
+      "DependsOn": [
+        "ApilambdaDatasource2C776EE2",
+        "ApiSchema510EECD7"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/Api/lambdaDatasource/QuerylistPaymentsResolver/Resource"
+      }
+    },
+    "ApilambdaDatasourceMutationcreatePaymentResolverD7383CFC": {
+      "Type": "AWS::AppSync::Resolver",
+      "Properties": {
+        "ApiId": {
+          "Fn::GetAtt": [
+            "ApiF70053CD",
+            "ApiId"
+          ]
+        },
+        "FieldName": "createPayment",
+        "TypeName": "Mutation",
+        "DataSourceName": "lambdaDatasource",
+        "Kind": "UNIT"
+      },
+      "DependsOn": [
+        "ApilambdaDatasource2C776EE2",
+        "ApiSchema510EECD7"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/Api/lambdaDatasource/MutationcreatePaymentResolver/Resource"
+      }
+    },
+    "ApilambdaDatasourceMutationdeletePaymentResolver161C5C45": {
+      "Type": "AWS::AppSync::Resolver",
+      "Properties": {
+        "ApiId": {
+          "Fn::GetAtt": [
+            "ApiF70053CD",
+            "ApiId"
+          ]
+        },
+        "FieldName": "deletePayment",
+        "TypeName": "Mutation",
+        "DataSourceName": "lambdaDatasource",
+        "Kind": "UNIT"
+      },
+      "DependsOn": [
+        "ApilambdaDatasource2C776EE2",
+        "ApiSchema510EECD7"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/Api/lambdaDatasource/MutationdeletePaymentResolver/Resource"
+      }
+    },
+    "ApilambdaDatasourceMutationupdatePaymentResolver72238630": {
+      "Type": "AWS::AppSync::Resolver",
+      "Properties": {
+        "ApiId": {
+          "Fn::GetAtt": [
+            "ApiF70053CD",
+            "ApiId"
+          ]
+        },
+        "FieldName": "updatePayment",
+        "TypeName": "Mutation",
+        "DataSourceName": "lambdaDatasource",
+        "Kind": "UNIT"
+      },
+      "DependsOn": [
+        "ApilambdaDatasource2C776EE2",
+        "ApiSchema510EECD7"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/Api/lambdaDatasource/MutationupdatePaymentResolver/Resource"
+      }
+    },
+    "authorizerappdevAppSyncPaymentsHandlerServiceRoleC13DCAAA": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/authorizerapp-dev-AppSyncPaymentsHandler/ServiceRole/Resource"
+      }
+    },
+    "authorizerappdevAppSyncPaymentsHandlerServiceRoleDefaultPolicy9856665F": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "dynamodb:*",
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "authorizerappdevCDKPaymentsTable6EAA195C",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Ref": "AWS::NoValue"
+                }
+              ]
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "authorizerappdevAppSyncPaymentsHandlerServiceRoleDefaultPolicy9856665F",
+        "Roles": [
+          {
+            "Ref": "authorizerappdevAppSyncPaymentsHandlerServiceRoleC13DCAAA"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/authorizerapp-dev-AppSyncPaymentsHandler/ServiceRole/DefaultPolicy/Resource"
+      }
+    },
+    "authorizerappdevAppSyncPaymentsHandler7762B343": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParameters69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64S3Bucket6BBF7235"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64S3VersionKey10876CD9"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64S3VersionKey10876CD9"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "authorizerappdevAppSyncPaymentsHandlerServiceRoleC13DCAAA",
+            "Arn"
+          ]
+        },
+        "Environment": {
+          "Variables": {
+            "CDK_PAYMENTS_TABLE": {
+              "Ref": "authorizerappdevCDKPaymentsTable6EAA195C"
+            }
+          }
+        },
+        "Handler": "main.handler",
+        "MemorySize": 1024,
+        "Runtime": "nodejs14.x"
+      },
+      "DependsOn": [
+        "authorizerappdevAppSyncPaymentsHandlerServiceRoleDefaultPolicy9856665F",
+        "authorizerappdevAppSyncPaymentsHandlerServiceRoleC13DCAAA"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/authorizerapp-dev-AppSyncPaymentsHandler/Resource",
+        "aws:asset:path": "asset.69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64",
+        "aws:asset:property": "Code"
+      }
+    },
+    "authorizerappdevCDKPaymentsTable6EAA195C": {
+      "Type": "AWS::DynamoDB::Table",
+      "Properties": {
+        "KeySchema": [
+          {
+            "AttributeName": "id",
+            "KeyType": "HASH"
+          }
+        ],
+        "AttributeDefinitions": [
+          {
+            "AttributeName": "id",
+            "AttributeType": "S"
+          }
+        ],
+        "BillingMode": "PAY_PER_REQUEST"
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain",
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/authorizerapp-dev-CDKPaymentsTable/Resource"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Analytics": "v2:deflate64:H4sIAAAAAAAA/1VQy07DMBD8Fu7OtiGIM20RXCpREn5g4yytm9gOfhRFlv+d2BEonGbG2l3PTAmhrLawvXvCb1vwrt9wbQhC45D37PCpTmhQkiPDDlpZZzx36fnNu9FnVpPV3nCKrKzu14dCImFA2XYI4cUr7oRWaeWXRyZQQqj1QPlSwpMeBJ/yz5lFZqsCrSVnYZdg1rD3vCe3R0sMx9FOikN4NThevobdKNJyVu/H/6rhF5LIjtnSMzpssvM0sVIp0HBLgZdwiUfWTQql7loIH9gufjOJkS2NZXNzbWehzquu/uqZB5XuCK52cysfoHycu7paIQrjlROSoF7wB+C2q62SAQAA"
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkStack/CDKMetadata/Default"
+      }
+    }
+  },
+  "Outputs": {
+    "GraphQLAPIURL": {
+      "Value": {
+        "Fn::GetAtt": [
+          "ApiF70053CD",
+          "GraphQLUrl"
+        ]
+      }
+    },
+    "GraphQLAPIKey": {
+      "Value": ""
+    },
+    "StackRegion": {
+      "Value": "eu-west-1"
+    }
+  }
+}

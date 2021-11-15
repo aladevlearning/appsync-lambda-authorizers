@@ -1,0 +1,917 @@
+{
+  "version": "14.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "CdkStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://555485882223/eu-west-1",
+      "properties": {
+        "templateFile": "CdkStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/CdkStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.a693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5",
+              "id": "a693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5",
+              "packaging": "zip",
+              "sourceHash": "a693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5",
+              "s3BucketParameter": "AssetParametersa693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5S3Bucket2D66C257",
+              "s3KeyParameter": "AssetParametersa693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5S3VersionKeyD9EF7FB8",
+              "artifactHashParameter": "AssetParametersa693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5ArtifactHashFB5DD839"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "cdkStack.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:35:30)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64",
+              "id": "69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64",
+              "packaging": "zip",
+              "sourceHash": "69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64",
+              "s3BucketParameter": "AssetParameters69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64S3Bucket6BBF7235",
+              "s3KeyParameter": "AssetParameters69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64S3VersionKey10876CD9",
+              "artifactHashParameter": "AssetParameters69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64ArtifactHash321A7118"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "cdkStack.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:65:28)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/env": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "env",
+            "trace": [
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:20:5)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/authorizerapp-dev-AppSyncAuthorizerHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "authorizerappdevAppSyncAuthorizerHandlerServiceRole1AFC13DD",
+            "trace": [
+              "new Role (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "new Function (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:318:31)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:35:30)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/authorizerapp-dev-AppSyncAuthorizerHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "authorizerappdevAppSyncAuthorizerHandlerServiceRoleDefaultPolicyBD106319",
+            "trace": [
+              "new Policy (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:236:28)",
+              "Function.addToRolePolicy (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:146:15)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:46:22)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/authorizerapp-dev-AppSyncAuthorizerHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "authorizerappdevAppSyncAuthorizerHandler4AA82814",
+            "trace": [
+              "new Function (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:388:35)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:35:30)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/a693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5S3Bucket2D66C257",
+            "trace": [
+              "new FileAssetParameters (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "cdkStack.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:35:30)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/a693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5S3VersionKeyD9EF7FB8",
+            "trace": [
+              "new FileAssetParameters (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "cdkStack.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:35:30)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/a693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa693e95a58ba8785404bfe8cab371a1ed260e688b31db93ac591f55e4f594fd5ArtifactHashFB5DD839",
+            "trace": [
+              "new FileAssetParameters (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "cdkStack.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:35:30)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64S3Bucket6BBF7235",
+            "trace": [
+              "new FileAssetParameters (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "cdkStack.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:65:28)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64S3VersionKey10876CD9",
+            "trace": [
+              "new FileAssetParameters (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "cdkStack.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:65:28)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters69dd96389bf19fd66553e37cf28e376be6121d6b48debf8b45e67af7eb5fbe64ArtifactHash321A7118",
+            "trace": [
+              "new FileAssetParameters (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "cdkStack.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:65:28)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Api/ApiLogsRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiApiLogsRole90293F72",
+            "trace": [
+              "new Role (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "GraphqlApi.setupLogConfig (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi.ts:327:57)",
+              "new GraphqlApi (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi.ts:246:23)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:48:17)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Api/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiF70053CD",
+            "trace": [
+              "new GraphqlApi (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi.ts:243:16)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:48:17)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Api/Schema": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiSchema510EECD7",
+            "trace": [
+              "Schema.bind (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\schema.ts:52:21)",
+              "new GraphqlApi (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi.ts:259:39)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:48:17)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Api/lambdaDatasource/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceServiceRole2CA75790",
+            "trace": [
+              "new Role (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "new BaseDataSource (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:64:47)",
+              "new BackedDataSource (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:103:5)",
+              "new LambdaDataSource (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:195:5)",
+              "GraphqlApi.addLambdaDataSource (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi-base.ts:106:12)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:77:26)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Api/lambdaDatasource/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceServiceRoleDefaultPolicy3A97E34D",
+            "trace": [
+              "new Policy (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:236:28)",
+              "Function.addToPrincipal (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:92:61)",
+              "Function.addToPrincipalOrResource (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:48:26)",
+              "Function.grantInvoke (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:184:25)",
+              "new LambdaDataSource (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:201:26)",
+              "GraphqlApi.addLambdaDataSource (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi-base.ts:106:12)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:77:26)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Api/lambdaDatasource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasource2C776EE2",
+            "trace": [
+              "new BaseDataSource (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:67:15)",
+              "new BackedDataSource (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:103:5)",
+              "new LambdaDataSource (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:195:5)",
+              "GraphqlApi.addLambdaDataSource (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\graphqlapi-base.ts:106:12)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:77:26)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Api/lambdaDatasource/QuerygetPaymentByIdResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceQuerygetPaymentByIdResolver8F92ADB5",
+            "trace": [
+              "new Resolver (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\resolver.ts:56:21)",
+              "LambdaDataSource.createResolver (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:80:12)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:82:14)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Api/lambdaDatasource/QuerylistPaymentsResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceQuerylistPaymentsResolverF10D75D8",
+            "trace": [
+              "new Resolver (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\resolver.ts:56:21)",
+              "LambdaDataSource.createResolver (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:80:12)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:87:14)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Api/lambdaDatasource/MutationcreatePaymentResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceMutationcreatePaymentResolverD7383CFC",
+            "trace": [
+              "new Resolver (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\resolver.ts:56:21)",
+              "LambdaDataSource.createResolver (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:80:12)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:92:14)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Api/lambdaDatasource/MutationdeletePaymentResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceMutationdeletePaymentResolver161C5C45",
+            "trace": [
+              "new Resolver (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\resolver.ts:56:21)",
+              "LambdaDataSource.createResolver (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:80:12)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:97:14)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Api/lambdaDatasource/MutationupdatePaymentResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceMutationupdatePaymentResolver72238630",
+            "trace": [
+              "new Resolver (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\resolver.ts:56:21)",
+              "LambdaDataSource.createResolver (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-appsync\\lib\\data-source.ts:80:12)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:102:14)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/authorizerapp-dev-AppSyncPaymentsHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "authorizerappdevAppSyncPaymentsHandlerServiceRoleC13DCAAA",
+            "trace": [
+              "new Role (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "new Function (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:318:31)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:65:28)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/authorizerapp-dev-AppSyncPaymentsHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "authorizerappdevAppSyncPaymentsHandlerServiceRoleDefaultPolicy9856665F",
+            "trace": [
+              "new Policy (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:236:28)",
+              "Function.addToPrincipal (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:92:61)",
+              "Table.combinedGrant (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:525:29)",
+              "Table.grantFullAccess (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:358:17)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:120:19)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/authorizerapp-dev-AppSyncPaymentsHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "authorizerappdevAppSyncPaymentsHandler7762B343",
+            "trace": [
+              "new Function (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:388:35)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:65:28)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/authorizerapp-dev-CDKPaymentsTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "authorizerappdevCDKPaymentsTable6EAA195C",
+            "trace": [
+              "new Table (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:681:18)",
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:107:27)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/GraphQLAPIURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphQLAPIURL",
+            "trace": [
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:129:5)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/GraphQLAPIKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphQLAPIKey",
+            "trace": [
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:134:5)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/Stack Region": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "StackRegion",
+            "trace": [
+              "new cdkStack (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk-stack.ts:139:5)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1371:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\index.ts:1374:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:331:12)",
+              "Object.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\typescript-json-schema\\node_modules\\ts-node\\src\\bin.ts:482:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:327:22)",
+              "process.EventEmitter.emit (domain.js:467:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (C:\\dev\\aws-learning\\appsync-lambda-authorizers\\authorizer-app\\client\\amplify\\backend\\custom\\lambdaAuthorizerCustomResource\\node_modules\\@cspotcode\\source-map-support\\source-map-support.js:613:40)"
+            ]
+          }
+        ]
+      },
+      "displayName": "CdkStack"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+# graphql/schema.graphql
+type Payment {
+  id: ID!
+  amount: Float!
+  currency: String!
+  dueDate: AWSDateTime!
+  from_account: String!
+  to_account: String!
+  message: String
+  type: PaymentType!
+  tenantId: ID!
+}
+
+enum PaymentType {
+  DOMESTIC
+  INTERNATIONAL
+}
+
+input CreatePaymentInput {
+  id: ID
+  amount: Float!
+  currency: String!
+  dueDate: AWSDateTime!
+  from_account: String!
+  to_account: String!
+  message: String
+  type: PaymentType!
+  tenantId: ID!
+}
+
+input UpdatePaymentInput {
+  id: ID!
+  amount: Float
+  currency: String
+  dueDate: AWSDateTime
+  from_account: String
+  to_account: String
+  message: String
+  type: PaymentType
+  tenantId: ID
+}
+
+input DeletePaymentInput {
+  id: ID
+}
+
+type Query {
+  getPaymentById(paymentId: ID!): Payment
+  listPayments: [Payment]
+}
+
+type Mutation {
+  createPayment(input: CreatePaymentInput!): Payment
+  updatePayment(input: UpdatePaymentInput!): Payment
+  deletePayment(input: DeletePaymentInput!): String
+}

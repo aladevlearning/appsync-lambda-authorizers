@@ -1,1 +1,8 @@
-{}
+{
+  "custom": {
+    "lambdaAuthorizerCustomResource": {
+      "service": "customCDK",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}

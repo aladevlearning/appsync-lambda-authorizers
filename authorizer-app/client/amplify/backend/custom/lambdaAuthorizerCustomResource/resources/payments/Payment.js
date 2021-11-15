@@ -1,0 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var PaymentType;
+(function (PaymentType) {
+    PaymentType[PaymentType["DOMESTIC"] = 0] = "DOMESTIC";
+    PaymentType[PaymentType["INTERNATIONAL"] = 1] = "INTERNATIONAL";
+})(PaymentType || (PaymentType = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGF5bWVudC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlBheW1lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFZQSxJQUFLLFdBR0o7QUFIRCxXQUFLLFdBQVc7SUFDWixxREFBUSxDQUFBO0lBQ1IsK0RBQWEsQ0FBQTtBQUNqQixDQUFDLEVBSEksV0FBVyxLQUFYLFdBQVcsUUFHZiIsInNvdXJjZXNDb250ZW50IjpbInR5cGUgUGF5bWVudCA9IHtcclxuICAgIGlkOiBzdHJpbmdcclxuICAgIGFtb3VudDogbnVtYmVyXHJcbiAgICBjdXJyZW5jeTogc3RyaW5nXHJcbiAgICBkdWVEYXRlOiBzdHJpbmdcclxuICAgIGZyb21fYWNjb3VudDogc3RyaW5nXHJcbiAgICB0b19hY2NvdW50OiBzdHJpbmdcclxuICAgIG1lc3NhZ2U6IHN0cmluZ1xyXG4gICAgdHlwZTogUGF5bWVudFR5cGVcclxuICAgIHRlbmFudElkOiBzdHJpbmdcclxufVxyXG5cclxuZW51bSBQYXltZW50VHlwZSB7XHJcbiAgICBET01FU1RJQyxcclxuICAgIElOVEVSTkFUSU9OQUxcclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgUGF5bWVudDsiXX0=
